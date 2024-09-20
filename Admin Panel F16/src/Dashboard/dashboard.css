@@ -31,21 +31,22 @@ h2{
     transition: ease-in 0.2s;
     margin-bottom: 35px;
     cursor: pointer;
-    &:hover{
-        background-color: white;
-        width: 100%;
-        border-radius: 5px;
-        .admin_menu_box_name{
-            color: black;
-        }
-
+    
+}
+.admin_menu_box:hover{
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+    .admin_menu_box_name{
+        color: black;
     }
-    &:nth-child(3){
-        background-color: white;
-        border-radius: 5px;
-        .admin_menu_box_name{
-            color: black;
-        }
+
+}
+&:nth-child(3){
+    background-color: white;
+    border-radius: 5px;
+    .admin_menu_box_name{
+        color: black;
     }
 }
 .admin_menu_box_name{
