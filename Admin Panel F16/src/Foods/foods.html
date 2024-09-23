@@ -39,25 +39,33 @@
                         </div>
                     </div>
 
-                    <form>
+                    <form class="form">
 
                         <div class="main">
                             <div class="container">
                                 <div class="main_body">
                                     <h3>Foods</h3>
-                                    <input type="text" name="name" placeholder="Add food name...">
-                                    <input type="text" name="type" placeholder="Add description...">
-                                    <input type="number" name="price" placeholder="Add food price...">
-                                    <input type="text" name="type" placeholder="Add food type...">
+                                    <input type="text" name="name" placeholder="Add food name..." maxlength="40" minlength="3" required>
+                                    <input type="number" name="price" placeholder="Add food price..." required maxlength="50" min="1"> <br>
+                                    <input type="url" name="img" placeholder="Add food img..." required maxlength="1000" minlength="5"> <br>
+                                    <textarea type="text" name="description" placeholder="Add description..." maxlength="500" cols="100" rows="10"></textarea> <br>
+                                    <select name="type" id="food-type">
+                                        <option value="dicert">Disert</option>
+                                        <option value="parxes">Parxez</option>
+                                        <option value="yevro">Yevro</option>
+                                        <option value="national">National</option>
+                                    </select>
                                     <br>
-                                    <button>ADD</button>
+                                    <button type="submit">ADD</button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="products">
                             <div class="container">
-                                <div class="products_body"></div>
+                                <div class="products_body">
+                                    
+                                </div>
                             </div>
                         </div>
 
@@ -70,6 +78,8 @@
     </header>
 
 
-    <script src="./index.js"></script>
+  
+
+    <script src="./foods.js"></script>
 </body>
 </html>
