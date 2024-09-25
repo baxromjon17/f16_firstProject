@@ -61,14 +61,6 @@
                             </div>
                         </div>
 
-                        <div class="products">
-                            <div class="container">
-                                <div class="products_body">
-                                    
-                                </div>
-                            </div>
-                        </div>
-
                     </form>
 
                 </div>
@@ -78,6 +70,44 @@
     </header>
 
 
+        <main>
+
+
+            <div class="main_container">
+                <div class="to_do">
+                    <!-- <h1>1</h1>
+                    <h1>Napaleon</h1>
+                    <h3>3$</h3>
+                    <img src="../Foods/img/Napaleon.webp" width="100px" height="70px" alt="">
+                    <button style="border-radius: 15px; background-color: red; color: white; border: none; padding: 8px 13px;">Delete</button>
+                    <button style="border-radius: 15px; background-color: yellow; border: none; padding: 8px 13px;">Update</button>
+                </div> -->
+  
+            </div>
+            
+
+                <form class="update">
+                            <div class="update_box">
+
+                                <h3>UPDATE</h3>
+                                <input type="text" name="name" placeholder="Add food name..." maxlength="40" minlength="3" required>
+                                <input type="number" name="price" placeholder="Add food price..." required maxlength="50" min="1"> <br>
+                                <input type="url" name="img" placeholder="Add food img..." required maxlength="1000" minlength="5"> <br>
+                                <textarea type="text" name="description" placeholder="Add description..." maxlength="100" cols="50" rows="5"></textarea> <br>
+                                <select name="type" id="food-type">
+                                    <option value="dicert">Disert</option>
+                                    <option value="parxes">Parxez</option>
+                                    <option value="yevro">Yevro</option>
+                                    <option value="national">National</option>
+                                </select>
+                                <br>
+                                <button type="submit">ADD</button>
+                                <span style="cursor: pointer; font-size: 1.4rem;" onclick="backMenu()">-Back</span>
+                            </div>
+                           
+                </form>
+            
+        </main>
   
 
     <script src="./foods.js"></script>

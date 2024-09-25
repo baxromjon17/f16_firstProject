@@ -69,7 +69,13 @@ a{
     background-color: white;
     border-radius: 40%;
 }
-
+.users_div{
+    width: 90%;
+    height: 80vh;
+    border: 2px solid white;
+    border-radius: 15px;
+    color: white;
+}
 
 /*////////////main ///////////*/
 

@@ -34,6 +34,7 @@ h2{
     
     
 }
+
 .admin_menu_box:nth-child(3){
     background-color: white;
     border-radius: 5px;
@@ -47,9 +48,20 @@ h2{
     background-color: white;
     width: 100%;
     border-radius: 5px;
-    
-  
+    .admin_menu_box_name{
+        color: black;
+    }
+    a{
+        color: black;
+    }
 }
+/* &:nth-child(3){
+    background-color: white;
+    border-radius: 5px;
+    .admin_menu_box_name{
+        color: black;
+    }
+} */
 .admin_menu_box_name{
     color: black;
 }

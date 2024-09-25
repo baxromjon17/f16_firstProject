@@ -31,7 +31,8 @@ h2{
     transition: ease-in 0.2s;
     margin-bottom: 35px;
     cursor: pointer;
-    &:hover{
+}
+.admin_menu_box:hover{
         background-color: white;
         width: 100%;
         border-radius: 5px;
@@ -49,7 +50,7 @@ h2{
             color: black;
         }
     }
-}
+
 .admin_menu_box_name{
     color: white;
     font-weight: 600;
@@ -79,7 +80,7 @@ form{
     border: 1px solid white;
     border-radius: 15px;
     width: 90%;
-    height: 470px;
+    height: 600px;
     margin: 0 auto;
 }
 input{
@@ -92,7 +93,7 @@ input{
     border: none;
     border-radius: 7px;
 }
-button{
+ button{
     padding: 11px;
     width: 140px;
     margin-top: 20px;
@@ -120,11 +121,67 @@ h3{
 .products_body{
     border: 1px solid white;
     width: 90%;
-    height: 250px;
+    height: 200px;
     border-radius: 15px;
     margin: 0 auto;
     margin-top: 20px;
 }
 a{
     color: white;
+}
+
+/* ----------- main css ------------------- */
+
+
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(133, 97, 97);
+}
+.main_container{
+    max-width: 1250px;
+    width: 90%;
+    height: auto;
+    min-height: 80vh;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-left: 10%;
+    
+}
+
+.to_do{
+    max-width: 1200px;
+    width: 90%;
+    height: auto;
+    border-radius: 15px;
+    margin: 20px 15px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.to_do img{
+    width: 100px;
+}
+
+
+.update{
+    width:600px;
+    height: 450px;
+    border: 1px solid white;
+    background-image: none;
+    color: black;
+    position: absolute;
+    top: 700px;
+    transform: translateX(-900px);
+    transition: all 1s ease-in-out;
+}
+.update_box{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.active{
+    transform: translateX(-100px);
 }
