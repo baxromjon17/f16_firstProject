@@ -14,8 +14,8 @@
     padding: 10px 10px 10px 11px;
     width: 400px;
     height: 100vh;
-    -webkit-box-shadow: 15px -1px 27px 13px rgba(63, 216, 209, 0.52);
-    -moz-box-shadow: 15px -1px 27px 13px rgba(63, 216, 209, 0.52);
+    /* -webkit-box-shadow: 15px -1px 27px 13px rgba(63, 216, 209, 0.52); */
+    /* -moz-box-shadow: 15px -1px 27px 13px rgba(63, 216, 209, 0.52); */
     box-shadow: 15px -1px 27px 13px rgba(63, 216, 209, 0.52);
 
 }
@@ -83,4 +83,19 @@ header{
 .main_body{
     width: 100%;
     height: auto;
+}
+
+.settingsDiv{
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+.settingsDiv select{
+    width: 10%;
+    margin: 10px 10px;
+    height: 3vh;
+    border-radius: 10px;
+    border: none;
+    color: rgb(49, 24, 24);
+    background-color: rgb(114, 255, 19);
 }

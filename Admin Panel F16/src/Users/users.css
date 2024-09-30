@@ -80,10 +80,11 @@ header{
 }
 
 
-/*////////// Users ///////*/
+
 
 .users{
     width: 100%;
+
     height: 90vh;
 
 }
@@ -120,4 +121,29 @@ h1{
     justify-content: end;
     margin-right: 200px;
     font-size: 30px;
+}
+    height: auto;
+}
+
+.user_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 10px 15px;
+    background-color: white;
+    color: black;
+    padding: 2px 15px;
+}
+.user_box button{
+    background-color: red;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    
 }
