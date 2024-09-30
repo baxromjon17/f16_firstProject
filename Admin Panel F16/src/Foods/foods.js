@@ -71,8 +71,12 @@ createFoodTodo()
 function updateTodo(id){
   console.log(id);
 
-  let update = document.querySelector(".update")
-  update.classList.add("active")
+  let update = document.querySelector(".update");
+  update.classList.add("active");
+
+  update.addEventListener("submit", (e)=>{
+    e.preventDefault();
+  })
 }
 
 
@@ -83,3 +87,5 @@ function backMenu(){
   let update = document.querySelector(".update")
   update.classList.remove("active")
 }
+
+
