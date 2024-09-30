@@ -103,13 +103,7 @@ form.addEventListener("submit", (e) =>{
   
   }
 
-)
-
-
-
-}
-
-
+)}
 
 
 
