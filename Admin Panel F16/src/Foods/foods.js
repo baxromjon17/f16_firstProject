@@ -61,25 +61,23 @@ form.addEventListener("submit", (e) =>{
       })
 
   })
-  
-  console.log(data);
-
 }
 
-createFoodTodo()
+createFoodTodo();
 
 function updateTodo(id){
-
+  
   let update = document.querySelector(".update");
   update.classList.add("active");
 
-form.addEventListener("submit", (e) =>{
+
+  update.addEventListener("submit", (e) =>{
   e.preventDefault();
 
-  console.log(id);
-  
 
- 
+  if (e.target.value == ""){
+    alert("Please write information in the input 😅")
+  }else{
     let formData = new FormData(update);
     let data = Object.fromEntries(formData)
     
@@ -96,13 +94,15 @@ form.addEventListener("submit", (e) =>{
     .then(url => url.json())
     .then(data => console.log(data))
     
-
-    let inp1 = e.target[0].value = '';
-    let inp2 = e.target[1].value = '';
   
   
+    alert("Your product has been added 😀");
+    e.target.reset();
   }
 
+
+
+}
 )}
 
 
