@@ -69,14 +69,44 @@ form.addEventListener("submit", (e) =>{
 createFoodTodo()
 
 function updateTodo(id){
-  console.log(id);
 
   let update = document.querySelector(".update");
   update.classList.add("active");
 
-  update.addEventListener("submit", (e)=>{
-    e.preventDefault();
-  })
+form.addEventListener("submit", (e) =>{
+  e.preventDefault();
+
+  console.log(id);
+  
+
+ 
+    let formData = new FormData(update);
+    let data = Object.fromEntries(formData)
+    
+    
+  
+  
+    fetch(`https://66e5ad0f5cc7f9b6273e0ca9.mockapi.io/f16/${id}`,{
+      method:"PUT",
+      headers:{
+        "Content-Type":"application/json"
+      },
+      body: JSON.stringify(data),
+    })
+    .then(url => url.json())
+    .then(data => console.log(data))
+    
+
+    let inp1 = e.target[0].value = '';
+    let inp2 = e.target[1].value = '';
+  
+  
+  }
+
+)
+
+
+
 }
 
 
