@@ -52,7 +52,7 @@ form.addEventListener("submit", (e) =>{
         <div class="to_do">
         <h1>${item.id}</h1>
         <h1>${item.name}</h1>
-        <h3>${item.price}$</h3>
+        <h3>${item.price} so'm</h3>
         <img src="${item.img}">
         <button style="border-radius: 15px; background-color: red; color: white; border: none; padding: 8px 13px;" onclick="deleteTodo(${item.id})">Delete</button>
         <button style="border-radius: 15px; background-color: yellow; border: none; padding: 8px 13px;" onclick="updateTodo(${item.id})">Update</button>

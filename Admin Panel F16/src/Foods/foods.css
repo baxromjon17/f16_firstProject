@@ -137,7 +137,7 @@ a{
 main{
     width: 100%;
     height: auto;
-    background-color: rgb(133, 97, 97);
+    background-color: rgb(0, 255, 21);
     padding-top: 30px;
 }
 .main_container{
@@ -198,5 +198,5 @@ main{
     flex-direction: column;
 }
 .active{
-    transform: translateX(-100px);
+    transform: translateX(20px);
 }
