@@ -137,7 +137,9 @@ a{
 main{
     width: 100%;
     height: auto;
-    background-color: rgb(0, 255, 21);
+    background-image: url(../Foods/img/bg_img2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-top: 30px;
 }
 .main_container{
@@ -146,7 +148,7 @@ main{
     height: auto;
     margin-top: 50px;
     min-height: 80vh;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 15px;
     margin-left: 10%;
     
